@@ -1,8 +1,9 @@
 # Retrieval-Augmented Generation (RAG) System
 
-A **modular RAG (Retrieval-Augmented Generation)** system built with **FastAPI**, **MongoDB**, **Qdrant**,**LLM**, fully containerized with **Docker Compose** and monitored using **Prometheus**, **Node Exporter**, and **Grafana**.
+A modular Retrieval-Augmented Generation (RAG) system built with FastAPI, MongoDB, Qdrant, and LLM integration.
+Fully containerized with Docker Compose for easy deployment, and enhanced with Prometheus, Node Exporter, and Grafana for comprehensive monitoring and observability. This setup supports hybrid retrieval-based question answering and text generation pipelines, ensuring real-time insights into performance, scalability, and error rates.
+The system is designed for production-grade scalability, with asynchronous processing for high-throughput ingestion and querying. It reduces LLM hallucinations by grounding responses in retrieved vector data while providing full traceability through versioned embeddings and query logs.
 
-This project enables hybrid retrieval-based question answering and text generation pipelines with real-time observability and scalable microservices design.
 
 
 # Features
@@ -115,3 +116,4 @@ uvicorn app.main:app --reload
 # Contributing
 
 Pull requests are welcome!
+
