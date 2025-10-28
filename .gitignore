@@ -1,15 +1,24 @@
 
-# Logs
+# ---- Logs ----
 logs/
+*.log
 
-# MongoDB data
+# ---- MongoDB & Qdrant Data ----
 mongo_data/
-mongo_data/
+mongo_init/
+qdrant_data/
 
-# Virtual environment
+# ---- Docker ----
+docker-compose.override.yml
+docker/*.env
+docker/*.log
+docker/*_data/
+
+# ---- Virtual Environment ----
 venv/
+.envrc
 
-# Python cache
+# ---- Python Cache ----
 __pycache__/
 *.py[cod]
 *$py.class
@@ -27,20 +36,45 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
-# Environment variables
+# ---- Environment Variables ----
 .env
+.env.*
+!env.example
 
-# IDE
+# ---- Jupyter / Notebooks ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- IDE / Editor ----
 .vscode/
 .idea/
-*.swp
-*.swo
+*.sublime-project
+*.sublime-workspace
 
-# OS
+# ---- OS Files ----
 .DS_Store
 Thumbs.db
+
+# ---- Test / Coverage ----
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache
+.pytest_cache/
+test-results/
+
+# ---- Temporary ----
+tmp/
+*.tmp
+*.bak
+*.swp
